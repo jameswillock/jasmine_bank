@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jasmine Bank</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href='images/favicon.ico' rel='icon' type='image/x-icon' />
+  <meta content='James Willock' name='author' />
+  <meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0' name='viewport' />
+</head>
+<body>
+  <h1>Bank of GA <sub>&reg;</sub></h1>
+
+  <div class="container">
+
+    <div class="account">
+      <h2>Account balance</h2>
+      <p>You currently have: &pound;<span id="account_amount">0</span>.</p>
+    </div>
+
+    <form method="post" action="#" id="deposit_form">
+      <fieldset>
+        <h3>Make a deposit</h3>
+        <input type="text" id="deposit_amount" name="deposit_amount" placeholder="Deposit amount" />
+        <input type="submit" value="Deposit">
+      </fieldset>
+    </form>
+
+    <form method="post" action="#" id="withdraw_form">
+      <fieldset>
+        <h3>Make a withdrawal</h3>
+        <input type="text" id="withdraw_amount" name="withdraw_amount" placeholder="Withdrawal amount" />
+        <input type="submit" value="Withdraw">
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="js/lib/Account.js"></script>
+  <script src="js/lib/AccountForm.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

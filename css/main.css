@@ -1,0 +1,129 @@
+/********
+* BASIC *
+********/
+body {
+  font: 100%/1.5 "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+/*********
+* TYPE  *
+*********/
+h1 {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  background: #0c459c;
+  margin: 0;
+  padding: 0.625em;
+}
+
+.account p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.125em;
+}
+
+.account span {
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0 0 0.9375em 0;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 0 0.9375em 0;
+}
+
+/*********
+* LAYOUT *
+*********/
+.container {
+  max-width: 58.75em;
+  margin: 1.25em auto;
+}
+
+.account {
+  padding: 0.9375em;
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.account,
+form {
+  width: 31.914893617%;
+  float: left;
+  min-height: 9.375em;
+}
+
+/*********
+* FORMS  *
+*********/
+form {
+  margin-left: 2.127659574%;
+  background: #fff;
+  padding: 0.9375em;
+}
+
+input {
+  display: block;
+  margin: 0 0 0.625em;
+  width: 100%;
+}
+
+input[type='text'] {
+  padding: 0.5em;
+  border: 1px solid #999;
+  font-size: 1em;
+}
+
+input[type='text']:focus {
+  border-color: #0c459c;
+  outline: none;
+}
+
+input[type='submit'] {
+  font-size: 1em;
+  background: #0c459c;
+  padding: 0.5em;
+  border: 0;
+  color: #fff;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+}
+
+form:nth-child(2) input[type='submit'] {
+  background: #fb000c;
+}
+
+input:last-child {
+  margin-bottom: 0;
+}
+
+form input[type='submit']:hover,
+form input[type='submit']:focus {
+  cursor: pointer;
+  background-color: #999;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+/********
+* HACKS *
+********/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
