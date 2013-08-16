@@ -46,3 +46,7 @@ Account.prototype.withdraw = function(amount) {
 Account.prototype.getBalance = function() {
   return this.balance;
 };
+
+Account.prototype.getCreditLimit = function() {
+  return (324 / 100) * this.balance;
+};
