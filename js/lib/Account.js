@@ -9,7 +9,7 @@ var Account = function(options) {
     startingBalance: 0
   };
 
-  this.balance = options.startingBalance || defaults.startingBalance;
+  this.balance = typeof options.balance !== 'undefined' ? options.balance : defaults.balance;
 
 };
 
