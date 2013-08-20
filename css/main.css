@@ -6,7 +6,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  background: #ccc;
+  background: #fff;
 }
 
 /*********
@@ -15,10 +15,13 @@ body {
 h1 {
   text-align: center;
   color: #fff;
-  width: 100%;
-  background: #0c459c;
+  background: #000;
   margin: 0;
   padding: 0.625em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.833333333em 0;
 }
 
 .account p {
@@ -52,14 +55,14 @@ h3 {
   padding: 0.9375em;
   text-align: center;
   margin: 0 auto;
-  background: #fff;
 }
 
 .account,
 form {
   width: 31.914893617%;
   float: left;
-  min-height: 9.375em;
+  min-height: 12.5em;
+  border: 1px solid #ddd;
 }
 
 /*********
@@ -67,7 +70,6 @@ form {
 *********/
 form {
   margin-left: 2.127659574%;
-  background: #fff;
   padding: 0.9375em;
 }
 

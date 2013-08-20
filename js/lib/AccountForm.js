@@ -14,9 +14,9 @@ var AccountForm = function(options) {
     account: new Account(100)
   };
 
-  this.depositForm = options.depositForm || defaults.depositForm;
-  this.withdrawForm = options.withdrawForm || defaults.withdrawForm;
-  this.account = options.account || defaults.account;
+  this.depositForm = typeof options.depositForm !== 'undefined' ? options.depositForm : defaults.depositForm;
+  this.withdrawForm = typeof options.withdrawForm !== 'undefined' ? options.withdrawForm : defaults.withdrawForm;
+  this.account = typeof options.account !== 'undefined' ? options.account : defaults.account;
 
   /*************
   * INITIALIZE *
