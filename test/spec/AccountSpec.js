@@ -12,7 +12,7 @@ describe("Account", function() {
 
   describe("when creating", function(){
     it("should create a new Account", function() {
-      expect(account instanceof Account).toBeTruthy();
+      expect(account instanceof Account).toBe(true);
     });
 
     it("should have a balance property", function() {
@@ -79,15 +79,15 @@ describe("Account", function() {
 
   describe("when validating amounts", function() {
     it("should be able to test if an amount is numeric", function() {
-      expect(account.isNumber(42)).toBeTruthy();
+      expect(account.isNumber(42)).toBe(true);
     });
 
     it("should return false if an amount is not numeric", function() {
-      expect(account.isNumber("Hello")).toBeFalsy();
+      expect(account.isNumber("Hello")).toBe(false);
     });
 
     it("should understand a number as a string", function() {
-      expect(account.isValidAmount("42")).toBeTruthy();
+      expect(account.isValidAmount("42")).toBe(true);
     });
 
     it("should throw an error if parsing an empty string", function() {
