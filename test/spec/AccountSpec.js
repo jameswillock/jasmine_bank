@@ -103,8 +103,11 @@ describe("Account", function() {
     });
   });
 
-  it("should return a credit limit", function() {
-    expect(accountWithBalance.getCreditLimit()).toEqual(3240);
+  describe("when checking credit limit", function() {
+    it("should return a credit limit", function() {
+      expect(accountWithBalance.getCreditLimit()).toEqual(3240);
+    });
   });
+
 
 });
