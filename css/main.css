@@ -119,6 +119,13 @@ fieldset {
   padding: 0;
 }
 
+span.error {
+  display: block;
+  color: #FF0000;
+  font-weight: bold;
+  text-align: center;
+}
+
 /********
 * HACKS *
 ********/
