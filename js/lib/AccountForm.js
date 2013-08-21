@@ -43,7 +43,7 @@ AccountForm.prototype.bindDepositEvent = function() {
 
     try {
       _this.account.deposit(amount);
-      _this.updateBalance(account);
+      _this.updateBalance();
     } catch(e) {
       alert(e);
     }
@@ -63,7 +63,7 @@ AccountForm.prototype.bindWithdrawEvent = function() {
 
     try {
       _this.account.withdraw(amount);
-      _this.updateBalance(account);
+      _this.updateBalance();
     } catch(e) {
       alert(e);
     }
