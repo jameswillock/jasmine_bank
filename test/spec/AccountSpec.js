@@ -90,6 +90,12 @@ describe("Account", function() {
       expect(account.isValidAmount("42")).toBe(true);
     });
 
+    it("should check if a number is numeric when checking validity", function() {
+      spyOn(account, 'isNumber').andReturn(true);
+      account.isValidAmount(42);
+      expect(account.isNumber).toHaveBeenCalled();
+    });
+
     it("should throw an error if parsing an empty string", function() {
       expect(function(){
         account.isValidAmount("");
