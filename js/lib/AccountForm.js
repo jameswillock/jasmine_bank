@@ -39,7 +39,7 @@ AccountForm.prototype.bindDepositEvent = function() {
     event.preventDefault();
 
     var amountInput = document.getElementById("deposit_amount"),
-        amount = parseInt(amountInput.value, 10);
+        amount = parseFloat(amountInput.value);
 
     try {
       _this.account.deposit(amount);
@@ -59,7 +59,7 @@ AccountForm.prototype.bindWithdrawEvent = function() {
     event.preventDefault();
 
     var amountInput = document.getElementById("withdraw_amount"),
-        amount = parseInt(amountInput.value, 10);
+        amount = parseFloat(amountInput.value);
 
     try {
       _this.account.withdraw(amount);

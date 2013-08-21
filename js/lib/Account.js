@@ -20,7 +20,7 @@ Account.prototype.isNumber = function(number) {
 Account.prototype.isValidAmount = function(amount) {
   if (!this.isNumber(amount)) {
     throw new Error("AmountIsNotANumber");
-  } else if (amount < 1) {
+  } else if (amount <= 0) {
     throw new Error("AmountMustBePositive");
   } else {
     return true;
