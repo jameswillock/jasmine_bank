@@ -44,8 +44,8 @@ AccountForm.prototype.bindDepositEvent = function() {
     try {
       _this.account.deposit(amount);
       _this.updateBalance();
-    } catch(e) {
-      alert(e);
+    } catch(error) {
+      _this.renderError(error, amountInput);
     }
 
   });
@@ -64,10 +64,24 @@ AccountForm.prototype.bindWithdrawEvent = function() {
     try {
       _this.account.withdraw(amount);
       _this.updateBalance();
-    } catch(e) {
-      alert(e);
+    } catch(error) {
+      _this.renderError(error, amountInput)
     }
 
   });
 
+};
+
+AccountForm.prototype.renderError = function(error, inputElem) {
+  var currentErrors = document.getElementsByClassName("error"),
+      errorElem = document.createElement("span");
+
+  errorElem.className = "error";
+  errorElem.innerHTML = "Error: " + error.message;
+
+  for(var i = 0; i < currentErrors.length; i ++) {
+    currentErrors[i].parentNode.removeChild(currentErrors[i]);
+  }
+
+  inputElem.parentNode.appendChild(errorElem);
 };
